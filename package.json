@@ -17,8 +17,7 @@
   "private": true,
   "scripts": {
     "lint": "ng lint",
-    "start": "webpack --watch",
-    "start:web": "webpack-dev-server . --port 4200",
+    "start": "npm run watch",
     "build": "webpack --display-error-details && copyfiles main.js dist",
     "build:prod": "cross-env NODE_ENV='production' npm run build",
     "electron:serve": "electron . --serve",
