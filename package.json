@@ -13,7 +13,7 @@
     "build:electron:linux": "npm run build:prod && copyfiles package.json dist && electron-packager dist --overwrite --platform=linux --arch=x64 --asar=true  --out=builds",
     "build:electron:windows": "npm run build:prod && copyfiles package.json dist && electron-packager dist --overwrite --platform=win32 --arch=ia32 --asar=true --out=builds",
     "build:electron:mac": "npm run build:prod && copyfiles package.json dist && electron-packager dist --overwrite --platform=darwin --arch=x64 --asar=true --out=builds",
-    "watch:electron:dev": "concurrently \"npm run serve:dev\" \"npm run electron:serve\""
+    "watch:electron:dev": "concurrently \"npm run serve:dev\" \"npm run electron:dev\""
   },
   "dependencies": {
     "@angular/animations": "^4.1.2",
