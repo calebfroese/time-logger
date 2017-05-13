@@ -1,6 +1,7 @@
 :host {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0;
+    width: 350px;
     padding: 10px;
     
     md-card {
@@ -24,5 +25,11 @@
     }
     .card-menu-button:hover {
         color: grey;
+    }
+    .time-container {
+        width: 40%;
+    }
+    .category-container {
+        width: 100%;
     }
 }

@@ -2,15 +2,24 @@
     <md-card-title>
         <span>
             <button disableRipple md-icon-button class="card-menu-button">
-                <md-icon>cancel</md-icon>
+                <md-icon>{{pinned ? 'play_arrow' : 'pause'}}</md-icon>
             </button>
             <button disableRipple md-icon-button class="card-menu-button">
-                <md-icon>pause_circle_outline</md-icon>
+                <md-icon>{{pinned ? 'star' : 'star_border'}}</md-icon>
             </button>
         </span>
-        <span>17m 53s</span>
+        <md-input-container class="time-container">
+            <input mdInput type="time" value="17:36">
+        </md-input-container>
     </md-card-title>
-    <md-card-subtitle>Development - Server</md-card-subtitle>
+    <md-card-subtitle>
+        <md-select placeholder="Select a category" class="category-container">
+            <md-option value="Documentation">Documentation</md-option>
+            <md-option value="Development - Extra">Development - Extra</md-option>
+            <md-option value="Development - Web">Development - Web</md-option>
+            <md-option value="Development - Server">Development - Server</md-option>
+        </md-select>
+    </md-card-subtitle>
     <md-input-container>
         <textarea mdInput cols="30" rows="10">This is some sample text that will be added. This is some sample text that will be added. This is some sample text that will be added. This is some sample text that will be added. This is some sample text that will be added. This is some sample text that will be added. This is some sample text that will be added.</textarea>
     </md-input-container>

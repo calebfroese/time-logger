@@ -1,6 +1,7 @@
 import 'zone.js';
 import 'reflect-metadata';
 
+import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
@@ -17,8 +18,8 @@ import {ElectronService} from './providers/electron.service';
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
-    BrowserModule, FormsModule, BrowserAnimationsModule, HttpModule,
-    TimerModule, AppRoutingModule, MaterialModule.forRoot()
+    BrowserModule, FormsModule, CommonModule, BrowserAnimationsModule,
+    HttpModule, TimerModule, AppRoutingModule, MaterialModule.forRoot()
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]

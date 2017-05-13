@@ -1,11 +1,13 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-timer',
   templateUrl: './timer.component.html',
   styleUrls: ['./timer.component.scss']
 })
 export class TimerComponent implements OnInit {
+  @Input() pinned: boolean;
   constructor() {}
 
   ngOnInit() {}
