@@ -1,7 +1,8 @@
 :host {
     display: flex;
-    flex-grow: 0;
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 350px;
     padding: 10px;
     
     md-card {
@@ -27,7 +28,7 @@
         color: grey;
     }
     .time-container {
-        width: 40%;
+        display: flex;
     }
     .category-container {
         width: 100%;
