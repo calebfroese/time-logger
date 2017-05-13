@@ -9,9 +9,15 @@
         width: 100%;
         padding: 10px;
     }
-    textarea, md-input-container {
+    textarea {
         width: 100%;
         font-size: 0.9em;
+    }
+    md-input-container {
+        div {
+        margin: 0;
+        }
+        margin: 0;
     }
     md-card-title {
         display: flex;
@@ -27,10 +33,10 @@
     .card-menu-button:hover {
         color: grey;
     }
-    .time-container {
-        display: flex;
-    }
     .category-container {
         width: 100%;
+    }
+    .time {
+        width: 150px;
     }
 }
