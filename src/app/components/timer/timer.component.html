@@ -1,9 +1,9 @@
-<md-card>
+<md-card [ngClass]="{'active-card': active}">
     <md-card-title>
         <input mdInput type="time" value="17:36" class="time">
         <span>
             <button disableRipple md-icon-button class="card-menu-button">
-                <md-icon>{{pinned ? 'play_arrow' : 'pause'}}</md-icon>
+                <md-icon>{{active ? 'pause' : 'play_arrow'}}</md-icon>
             </button>
             <button disableRipple md-icon-button class="card-menu-button">
                 <md-icon>{{pinned ? 'star' : 'star_border'}}</md-icon>
