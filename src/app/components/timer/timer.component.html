@@ -1,6 +1,7 @@
 <md-card [ngClass]="{'active-card': active}">
     <md-card-title>
-        <input mdInput type="time" value="17:36" class="time">
+        <input *ngIf="time" mdInput type="string" [value]="momentify(time)" class="time">
+        <input *ngIf="!time" mdInput type="time" value="17:36" class="time">
         <span>
             <button disableRipple md-icon-button class="card-menu-button">
                 <md-icon>{{active ? 'pause' : 'play_arrow'}}</md-icon>

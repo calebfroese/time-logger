@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   moduleId: module.id,
@@ -9,7 +10,15 @@ import {Component, Input, OnInit} from '@angular/core';
 export class TimerComponent implements OnInit {
   @Input() pinned: boolean;
   @Input() active: boolean;
+  @Input() time: any;
+
   constructor() {}
 
   ngOnInit() {}
+
+  momentify(date: any) {
+    let val = moment().subtract(date).format('HH:MM:ss');
+    console.log(val);
+    return val;
+  }
 }

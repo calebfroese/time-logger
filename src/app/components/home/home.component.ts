@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   moduleId: module.id,
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title = `App works !`;
+  today: any;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.today = moment();
   }
-
 }
